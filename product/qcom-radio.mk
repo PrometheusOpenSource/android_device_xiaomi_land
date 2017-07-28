@@ -18,17 +18,23 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.force_on_dc=true \
     persist.radio.ignore_dom_time=5 \
     persist.radio.mt_sms_ack=20 \
+    persist.data.qmi.adb_logmask=0 \
     persist.radio.multisim.config=dsds \
     persist.radio.rat_on=combine \
     persist.radio.sib16_support=1 \
     ril.subscription.types=NV,RUIM \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+    ril.ecclist=000,08,100,101,102,110,112,118,119,120,122,911,999 \
+    ril.ecclist1=000,08,100,101,102,110,112,118,119,120,122,911,999 \
+    ro.ril.disable.power.collapse=0 \
     ro.ct.device.model=XMP-2016030 \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.default_network=20 \
     ro.use_data_netmgrd=true \
     service.qti.ims.enabled=1 \
-    telephony.lteOnCdmaDevice=1
+    telephony.lteOnCdmaDevice=1 \
+    ro.ril.fast.dormancy.rule=0 \
+    ro.ril.hsxpa=0
 
 # RIL
 PRODUCT_PACKAGES += \
